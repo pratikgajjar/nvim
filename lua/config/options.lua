@@ -4,3 +4,4 @@
 local o = vim.opt
 
 o.clipboard = ""
+o.wrap = true
