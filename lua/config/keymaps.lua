@@ -3,6 +3,7 @@
 -- Add any additional keymaps here
 local map = vim.keymap.set
 local Util = require("lazyvim.util")
+local wk = require("which-key")
 
 -- Remap for dealing with visual line wraps
 map("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true })
@@ -51,3 +52,14 @@ end, { desc = "Lazygit (root dir)" })
 map("n", "<leader>gG", function()
   Util.float_term({ "gitui" }, { esc_esc = false, ctrl_hjkl = false })
 end, { desc = "Lazygit (cwd)" })
+-- register which key
+wk.register({
+  -- Database
+  L = {
+    name = "Database",
+    e = { "<Cmd>DBUIToggle<Cr>", "Toggle UI" },
+    f = { "<Cmd>DBUIFindBuffer<Cr>", "Find buffer" },
+    r = { "<Cmd>DBUIRenameBuffer<Cr>", "Rename buffer" },
+    q = { "<Cmd>DBUILastQueryInfo<Cr>", "Last query info" },
+  },
+}, { prefix = "<leader>" })

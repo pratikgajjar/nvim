@@ -16,6 +16,7 @@ return {
         "go",
         "rust",
         "vim",
+        "sql",
       },
     },
   },
