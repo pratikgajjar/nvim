@@ -1,3 +1,4 @@
+-- https://github.com/Myzel394/dotfiles/blob/d6baa20d249d72cfc3d1d5fbabb1fa468bd74321/nvim/after/plugin/theme.lua#L1
 return {
   {
     "catppuccin/nvim",
