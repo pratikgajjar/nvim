@@ -49,11 +49,13 @@
   "tokyonight.nvim": { "branch": "main", "commit": "6adfcde66e8af2f22dd5d76060980abd8daa0df8" },
   "trouble.nvim": { "branch": "main", "commit": "bf99ea71a39e322336b7f8be965f86dbf5c65540" },
   "ts-comments.nvim": { "branch": "main", "commit": "80eec3b9663ac3c4743b584f361099b061d0a9e5" },
+  "twilight.nvim": { "branch": "main", "commit": "38dc017474ef05605ca14a2577e01e09f0db7133" },
   "venv-selector.nvim": { "branch": "regexp", "commit": "47159757b334343fe60f16d52478f827ccefa09d" },
   "vim-dadbod": { "branch": "master", "commit": "7888cb7164d69783d3dce4e0283decd26b82538b" },
   "vim-dadbod-completion": { "branch": "master", "commit": "c3a56c652af9367c5a7b658ed7ed4dc494f430b0" },
   "vim-dadbod-ui": { "branch": "master", "commit": "954877c3396ad4bf5624fcbe7b5673ac43cd0928" },
   "vim-fugitive": { "branch": "master", "commit": "8c8cdf4405cb8bdb70dd9812a33bb52363a87dbc" },
   "vim-test": { "branch": "master", "commit": "34aab77f7a63f20a623df45684156915f6182a55" },
-  "which-key.nvim": { "branch": "main", "commit": "7915964e73c30ba5657e9a762c6570925dad421b" }
+  "which-key.nvim": { "branch": "main", "commit": "7915964e73c30ba5657e9a762c6570925dad421b" },
+  "zen-mode.nvim": { "branch": "main", "commit": "a31cf7113db34646ca320f8c2df22cf1fbfc6f2a" }
 }
