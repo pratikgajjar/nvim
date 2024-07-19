@@ -2,8 +2,13 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 local map = vim.keymap.set
+local del = vim.keymap.del
 local Util = require("lazyvim.util")
 local wk = require("which-key")
+
+-- Remove default keymaps
+-- LazyVim changelog
+del({ "n" }, "<leader>L")
 
 -- Remap for dealing with visual line wraps
 map("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true })
@@ -39,8 +44,8 @@ map("x", "<leader>p", [["_dP]], { desc = "paste text select mode" })
 map("n", "<leader>p", [["+p]], { desc = "paste from sys clip" })
 
 -- switch buffer
-map("n", "<tab>", "<cmd>bnext<cr>", { desc = "Next buffer" })
-map("n", "<S-tab>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
+-- map("n", "<tab>", "<cmd>bnext<cr>", { desc = "Next buffer" })
+-- map("n", "<S-tab>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
 
 -- Cancel search highlighting with ESC
 map({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>", { desc = "Clear hlsearch and ESC" })
